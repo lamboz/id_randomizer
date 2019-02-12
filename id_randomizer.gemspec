@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "id_randomizer/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "id_ramdomizer"
+  spec.name          = "id_randomizer"
   spec.version       = IdRandomizer::VERSION
   spec.authors       = ["Pablo Cordero"]
   spec.email         = ["pablocordero@gmail.com"]
