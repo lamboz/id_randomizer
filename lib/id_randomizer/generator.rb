@@ -19,6 +19,7 @@ module IdRandomizer
     end
 
     def generate_id
+      id=nil
       loop do
         id = (SecureRandom.random_number(9e6) + 1e6).to_i
         break if unique?(id)
