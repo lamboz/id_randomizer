@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Pablo Cordero"]
   spec.email         = ["pablocordero@gmail.com"]
 
-  spec.summary       = Write a short summary, because RubyGems requires one.
-  spec.description   = TODO: Write a longer description or delete this line.
-  spec.homepage      = https://github.com/lamboz/id_randomizer
+  spec.summary       = "Write a short summary, because RubyGems requires one."
+  spec.description   = "Write a longer description or delete this line."
+  spec.homepage      = "https://github.com/lamboz/id_randomizer"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
