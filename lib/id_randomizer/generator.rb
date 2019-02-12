@@ -1,4 +1,4 @@
-module RandomId
+module IdRandomizer
   class Generator
     attr_reader :record, :scope, :column
 

@@ -1,5 +1,5 @@
-module RandomId
-  module ActsAsRandomId
+module IdRandomizer
+  module ActsAsIdRandomizer
     DEFAULT_OPTIONS = {
       column: :randomized_id
     }.freeze
@@ -20,11 +20,6 @@ module RandomId
       #                       sequential ID should be scoped (default: nil)
       #           :column   - The Symbol representing the column that stores the
       #                       sequential ID (default: :sequential_id)
-      #           :start_at - The Integer value at which the sequence should
-      #                       start (default: 1)
-      #           :skip     - Skips the sequential ID generation when the lambda
-      #                       expression evaluates to nil. Gets passed the
-      #                       model object
       #
       # Examples
       #
@@ -36,7 +31,7 @@ module RandomId
       # Returns nothing.
       def randomize_id(options = {})
         unless defined?(sequenced_options)
-          include Sequenced::ActsAsSequenced::InstanceMethods
+          include IdRandomizer::ActsAsRandomId::InstanceMethods
 
           mattr_accessor :sequenced_options, instance_accessor: false
           self.sequenced_options = []
@@ -62,7 +57,7 @@ module RandomId
     module InstanceMethods
       def set_sequential_ids
         self.class.base_class.sequenced_options.each do |options|
-          RandomId::Generator.new(self, options).set
+          IdRandomizer::Generator.new(self, options).set
         end
       end
     end

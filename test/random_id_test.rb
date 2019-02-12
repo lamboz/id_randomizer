@@ -1,8 +1,8 @@
 require "test_helper"
 
-class RandomIdTest < Minitest::Test
+class IdRandomizerTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::RandomId::VERSION
+    refute_nil ::IdRandomizer::VERSION
   end
 
   def test_it_does_something_useful

@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in random_id.gemspec
+# Specify your gem's dependencies in id_randomizer.gemspec
 gemspec

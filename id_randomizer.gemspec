@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "random_id/version"
+require "id_randomizer/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "random_id"
-  spec.version       = RandomId::VERSION
+  spec.name          = "id_ramdomizer"
+  spec.version       = IdRandomizer::VERSION
   spec.authors       = ["Pablo Cordero"]
   spec.email         = ["pablocordero@gmail.com"]
 
