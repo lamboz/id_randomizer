@@ -31,7 +31,7 @@ module IdRandomizer
       # Returns nothing.
       def randomize_id(options = {})
         unless defined?(sequenced_options)
-          include IdRandomizer::ActsAsRandomId::InstanceMethods
+          include IdRandomizer::ActsAsIdRandomizer::InstanceMethods
 
           mattr_accessor :sequenced_options, instance_accessor: false
           self.sequenced_options = []
