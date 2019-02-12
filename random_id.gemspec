@@ -36,8 +36,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  s.add_dependency "activesupport", ">= 3.0"
-  s.add_dependency "activerecord", ">= 3.0"
+  spec.add_dependency "activesupport", ">= 3.0"
+  spec.add_dependency "activerecord", ">= 3.0"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
